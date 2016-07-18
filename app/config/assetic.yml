@@ -1,0 +1,12 @@
+assetic:
+    debug:          false # %kernel.debug%
+    use_controller: false
+    read_from:      %kernel.root_dir%/../web
+    write_to:       %kernel.root_dir%/../web
+    bundles:        []
+
+    assets:
+        project_css:
+            inputs:
+                - %kernel.root_dir%/../web/styles/main.css
+            filters: ~

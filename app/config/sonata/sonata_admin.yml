@@ -1,0 +1,11 @@
+#
+# more information can be found here https://sonata-project.org/bundles/admin
+#
+sonata_admin:
+    title: 'Test'
+
+    templates:
+        layout:  AdminBundle::base_layout.html.twig
+
+    persist_filters:      false
+    show_mosaic_button:   false

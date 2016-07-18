@@ -1,0 +1,7 @@
+<td class="image">
+    {% block field %}
+        {% if object.picture is defined %}
+            <img src="{{ vich_uploader_asset(object, 'imageFile') }}" class="vich-uploaded-image-preview"/>
+        {% endif %}
+    {% endblock %}
+</td>

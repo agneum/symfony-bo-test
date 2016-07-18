@@ -1,0 +1,12 @@
+<th>
+    {% block name %}
+        {{ admin.trans(field_description.label, {}, field_description.translationDomain) }}
+    {% endblock %}
+</th>
+<td class="image">
+    {% block show_field %}
+        {% if object.picture is defined %}
+            <img src="{{ vich_uploader_asset(object, 'imageFile') }}"/>
+        {% endif %}
+    {% endblock %}
+</td>
